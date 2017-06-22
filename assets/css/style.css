@@ -1,0 +1,612 @@
+/*I used reset.css so some of the style is part of the un-resetting process*/
+
+
+/*
+h1 changes:
+sets the different heading font style, sets the color for contrast
+resets the font stying from reset.css and adds box around text
+*/
+
+h1 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #ffffff;
+	font-size: 2em;
+	margin-top: 0.67em;
+	margin-bottom: 0.67em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+}
+
+
+/*
+h2 changes:
+sets the different heading font style, sets the color for contrast
+resets the font stying from reset.css and adds box around text
+*/
+
+h2 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+	font-size: 1.5em;
+	padding-left: 10px;
+	margin: 0.83em 0 0.83em 0;
+	font-weight: bold;
+}
+
+
+/* global font style and color */
+
+* {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777
+}
+
+
+/*
+the following 2 pseudo-classes modify the apperance of hyperlinks
+In this example, I remove the underline, and make them gray
+*/
+
+a:link,
+a:visited {
+	color: #777777;
+	text-decoration: none;
+}
+
+
+/*this pseudo-class modifies when hovered and clicked to be a bit bolder*/
+
+a:hover,
+a:active {
+	color: #777777;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+/***************************/
+
+
+/*unreset the i tag*/
+
+i {
+	font-size: 12px;
+}
+
+
+/*
+p tag changes include setting the font style, un-resetting the p tag
+then I give them a box for spacing and appearance
+*/
+
+p {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 14px;
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+	line-height: 150%;
+	padding: 0 10% 2% 5%;
+}
+
+
+/*
+hr tag changes include setting a different color, un-resetting the hr tag
+I give them a box for spacing and appearance
+*/
+
+hr {
+	color: #dddddd;
+	background: #dddddd;
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	border-style: inset;
+	border-width: 1px;
+	border: 0;
+	height: 3px;
+}
+
+
+/*
+The proPic id is for my Profile Picture on the About Page
+floats left and allows text to flow around the left justified image
+*/
+
+#proPic {
+	float: left;
+	margin: 0 25px 10px 10px;
+	width: 180px;
+	height: 181px;
+}
+
+
+/*
+headerBox is the row that is the header
+I set the color to white, and add a border at the bottom
+*/
+
+.headerBox {
+	background-color: #ffffff;
+	border-color: #cccccc;
+	height: 88px;
+	padding: 0px 270px 0px 270px;
+	border-bottom: 3px solid #cccccc;
+}
+
+
+/*
+headerName is the box that contains the Name of the Person
+I set the background color to teal, the sizing and the position
+*/
+
+.headerName {
+	float: left;
+	width: 33%;
+	padding: 5px;
+	background-color: #4aaaa5;
+	text-align: center;
+}
+
+
+/*
+headerLinks is the box that contains the links of the other pages on site
+default it to right and will modifiy the text inside with headLinks
+*/
+
+.headerLinks {
+	float: right;
+	width: 33%;
+	margin: 30px 0px;
+	text-align: center;
+}
+
+
+/*
+mainBox is the container that is the main content of the page
+I set the background image to a subtle image
+*/
+
+.mainBox {
+	width: 100%;
+	background-image: url("../images/whirlpool.png");
+	padding-bottom: 100px;
+	overflow: hidden;
+}
+
+
+/*
+mainLeft is the box that contains the core information on the site
+It will float to the left default and will be positioned to maintain about 2/3
+of the body minus the margins on the left and right
+*/
+
+.mainLeft {
+	float: left;
+	margin: 50px 0px 100px 270px;
+	background-color: #ffffff;
+	border-color: #dddddd;
+	width: 634px;
+	border: 3px solid #cccccc;
+}
+
+
+/*
+mainRight is the box that contains the auxillary information on the site
+It will float to the right default and will be positioned to maintain about 1/3
+of the body minus the margins on the left and right
+*/
+
+.mainRight {
+	float: left;
+	margin: 50px 0px 0px 50px;
+	background-color: #ffffff;
+	border-color: #dddddd;
+	width: 264px;
+	border: 3px solid #cccccc;
+}
+
+
+/*
+footerBox is the box that contains the footer
+Designed it to be a sticky footer, with a bolder background color and a bold border transition
+*/
+
+.footerBox {
+	/*Sticky Footer CSS*/
+	position: fixed;
+	height: 100px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	/********************/
+	background-color: #666666;
+	border-top: 10px solid #4aaaa5;
+	padding-left: 270px;
+	text-align: center;
+}
+
+
+/*
+footerText is a box that contains the footer text information
+changed the font style
+there is code to vertically align the text in the footer as the horizontal alignment was done in the parent
+*/
+
+#footerText {
+	font-weight: bold;
+	color: #ffffff;
+	position: relative;
+	top: 30%;
+	height: 30%;
+	width: 960px;
+}
+
+
+/*
+imageLeft and imageRight are boxes that contains the portfolio images
+on default page it defaults to floating to the left
+*/
+
+.imageleft {
+	position: relative;
+	float: left;
+	margin: 2.5% 7% 2% 10%;
+}
+
+.imageright {
+	position: relative;
+	float: left;
+	margin: 2.5% 10% 2% 7%;
+}
+
+
+/*
+portImage is the image that goes into the imageRight/imageLeft boxes
+Defaults to a 180x181 pixel size
+*/
+
+.portImage {
+	width: 180px;
+	height: 181px;
+}
+
+
+/*
+the center class defines a box for an overlay on the portImage
+makes a Teal box that is offset a bit from the bottom of the image
+and the same width as the image. Centers some white text within the box.
+*/
+
+.center {
+	position: absolute;
+	left: 0;
+	bottom: 10%;
+	width: 100%;
+	text-align: center;
+	padding: 5% 0 5% 0;
+	font-size: 18px;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	font-size: 1em;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+
+/*clearfix hack*/
+
+.clearfix:after {
+	content: " ";
+	/* Older browser do not support empty content */
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+
+/*
+The elements below are part of the form for the text input boxes on the
+Contact Me page.
+ */
+
+input[type=text],
+select,
+textarea {
+	width: 80%;
+	padding: 12px;
+	border: 1px solid #dddddd;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	margin-left: 10%;
+	resize: vertical;
+}
+
+
+/*
+This input element is part of the form for the submit button on the
+Contact Me page.
+ */
+
+input[type=submit] {
+	background-color: #4aaaa5;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-left: 10%;
+	margin-bottom: 16px;
+}
+
+
+/*
+pseudo-selector to animate when Submit Button is hovered over.
+*/
+
+input[type=submit]:hover {
+	background-color: #2f6a67;
+}
+
+
+/*Modify label tag with spacing and font formatting*/
+
+label {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 18px;
+	padding-left: 10%;
+}
+
+
+/****************************************************
+		@MEDIA QUERIES
+****************************************************/
+
+
+/*@media query when screen is less than 980px (Laptop)*/
+
+@media screen and (max-width: 980px) {
+	/*modifications to headerBox: reduced height, reduced padding for new margins,
+	killed border on bottom, mainBox will provide the border*/
+	.headerBox {
+		height: 65px;
+		padding: 0px 106px 0px 106px;
+		border-bottom: 0px solid #cccccc;
+	}
+	/*modifications to h1: reduced font-size*/
+	h1 {
+		font-size: 1.50em;
+	}
+	/*modifications to headerLinks: killed margin*/
+	.headerLinks {
+		margin: 0;
+	}
+	/*created headLinks: allows boxes to be floated with individual links w/ spacing*/
+	.headLinks {
+		position: relative;
+		float: left;
+		width: 33%;
+		height: 27px;
+		margin: 27px 0 15px 0;
+	}
+	/*modifications to mainBox: added border - with the headLinks, get wierd spacing*/
+	.mainBox {
+		border-top: 3px solid #cccccc;
+	}
+	/*modifications to mainLeft: reduced margin, changed width, and killed border*/
+	.mainLeft {
+		margin: 50px 0px 100px 106px;
+		width: 422px;
+		border: 0px solid #cccccc;
+	}
+	/*modifications to mainRight: killed border*/
+	.mainRight {
+		border: 0px solid #cccccc;
+	}
+	/*modifications to proPic: reduced top margin, added padding, embiggened the image*/
+	#proPic {
+		margin: 0 0 10px 10px;
+		padding-right: 25px;
+		width: 387px;
+		height: 100%;
+	}
+	/*modifications to imageleft: reduced margin*/
+	.imageleft {
+		margin: 2.5% 7% 2% .5em;
+	}
+	/*modifications to imageright: reduced margin*/
+	.imageright {
+		margin: 2.5% 7% 2% .5em;
+	}
+	/*modifications to portImage: made bigger - fill the space*/
+	.portImage {
+		width: 400px;
+		height: 397px;
+	}
+	/*modifications to footerBox: reduced height and padding*/
+	.footerBox {
+		height: 65px;
+		padding-left: 106px;
+	}
+	/*modifications to footerText: changed width to percentage - allows it to shrink*/
+	#footerText {
+		width: 78%;
+	}
+}
+
+
+/*@media query when screen is less than 768px (Tablet)
+	Reduce to 1 column of panels and 2 columns within the panels*/
+
+@media screen and (max-width: 768px) {
+	/*modifications to headerBox: reduced height, reduced padding for new margins,
+	killed border on bottom, mainBox will provide the border*/
+	.headerBox {
+		height: 65px;
+		padding: 0px 83px 0px 83px;
+		border-bottom: 0px solid #cccccc;
+	}
+	/*modifications to h1: reduced font-size and reduced margins*/
+	h1 {
+		font-size: 1.35em;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	/*modifications to headerLinks: killed margin*/
+	.headerLinks {
+		margin: 0;
+	}
+	/*created headLinks: allows boxes to be floated with individual links w/ spacing*/
+	.headLinks {
+		position: relative;
+		float: left;
+		width: 33%;
+		height: 27px;
+		margin: 27px 0 15px 0;
+	}
+	/*modifications to mainBox: added border - with the headLinks, get wierd spacing*/
+	.mainBox {
+		border-top: 3px solid #cccccc;
+	}
+	/*modifications to mainLeft: reduced margin, changed width, and killed border*/
+	.mainLeft {
+		margin: 25px 0px 50px 83px;
+		width: 602px;
+		border: 0px solid #cccccc;
+	}
+	/*modifications to mainRight: since moving to 1 column, made width bigger, adjusted margin
+	killed border*/
+	.mainRight {
+		margin: 0px 0px 0px 83px;
+		width: 602px;
+		border: 0px solid #cccccc;
+	}
+	/*modifications to proPic: reduced top margin, added padding, embiggened the image*/
+	#proPic {
+		margin: 0 0 10px 10px;
+		padding-right: 25px;
+		width: 301px;
+		height: 100%;
+	}
+	/*modifications to imageleft: reduced margin*/
+	.imageleft {
+		margin: 2.5% 1% 2% .5em;
+	}
+	/*modifications to imageright: float right, reduced margin*/
+	.imageright {
+		float: right;
+		margin: 2.5% .5em 2% 5%;
+	}
+	/*modifications to portImage: made bigger - fill the space*/
+	.portImage {
+		width: 264px;
+		height: 262px;
+	}
+	/*modifications to footerBox: reduced height and padding*/
+	.footerBox {
+		height: 65px;
+		padding-left: 83px;
+	}
+	/*modifications to footerText: changed width to percentage - allows it to shrink*/
+	#footerText {
+		width: 78%;
+	}
+}
+
+
+/*@media query when screen is less than 640px (Mobile)
+	Reduce to 1 column of panels and 1 column within the panels*/
+
+@media screen and (max-width: 640px) {
+	/*modifications to headerBox: Changed header to 2 full rows with 
+	headerName on top, and the headerLinks on bottom. 
+	set new height, killed padding,
+	killed border on bottom, mainBox will provide the border*/
+	.headerBox {
+		height: 120px;
+		padding: 0px 0px 0px 0px;
+		border-bottom: 0px solid #cccccc;
+	}
+	/*modifications to headerBox: made to span the Top of screen, */
+	.headerName {
+		width: 100%;
+	}
+	/*modifications to h1: reduced font-size*/
+	h1 {
+		font-size: 1.67em;
+	}
+	/*modifications to headerLinks: float to left for row 2 of header, 
+	filled the width, and killed margin*/
+	.headerLinks {
+		float: left;
+		width: 100%;
+		margin: 0;
+	}
+	/*created headLinks: allows boxes to be floated with individual links w/ spacing*/
+	.headLinks {
+		position: relative;
+		float: left;
+		width: 33%;
+		height: 26px;
+		margin: 19px 0 19px 0;
+	}
+	/*modifications to mainBox: added border - with the headLinks, get wierd spacing*/
+	.mainBox {
+		border-top: 3px solid #cccccc;
+	}
+	/*modifications to mainLeft: reduced margin, added padding, changed width, and killed border*/
+	.mainLeft {
+		margin: 25px 0px 33px 69px;
+		padding: 2.5%;
+		width: 474px;
+		border: 0px solid #cccccc;
+	}
+	/*modifications to mainright: reduced margin, added padding, changed width, and killed border
+	should fall underneath the mainLeft Panel*/
+	.mainRight {
+		margin: 0px 0px 0px 69px;
+		padding: 2.5%;
+		width: 474px;
+		border: 0px solid #cccccc;
+	}
+	/*modifications to proPic: reduced top margin, added padding, embiggened the image*/
+	#proPic {
+		margin: 0 0 20px 10px;
+		padding-right: 25px;
+		width: 95%;
+		height: 95%;
+	}
+	/*modifications to imageleft: reduced margin*/
+	.imageleft {
+		position: relative;
+		float: left;
+		margin: 2.5% 7% 2% .5em;
+	}
+	/*modifications to imageright: float left, reduced margin*/
+	.imageright {
+		position: relative;
+		float: left;
+		margin: 2.5% 7% 2% .5em;
+	}
+	/*modifications to portImage: made bigger - fill the space*/
+	.portImage {
+		width: 458px;
+		height: 455px;
+	}
+	/*modifications to footerBox: reduced height and padding*/
+	.footerBox {
+		height: 65px;
+		padding-left: 69px;
+	}
+	/*modifications to footerText: changed width to percentage - allows it to shrink*/
+	#footerText {
+		width: 78%;
+	}
+}
